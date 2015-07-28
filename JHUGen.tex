@@ -1,0 +1,91 @@
+\documentclass[usenames,dvipsnames,svgnames,table]{beamer}
+
+\usetheme{AnnArbor}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{enumitem}
+
+
+\newcommand{\CMS}[1]{\textcolor{blue}{#1}}
+\newcommand{\ATLAS}[1]{\textcolor{Green}{#1}}
+\newcommand{\theory}[1]{\textcolor{red}{#1}}
+\newcommand{\Sara}[1]{\textcolor{cyan}{#1}}
+\newcommand{\me}[1]{\textbf{\CMS{#1}}}
+
+\newcommand{\spin}[1]{\text{spin }#1}
+
+\newenvironment{variableblock}[3]{
+%http://tex.stackexchange.com/questions/33231/how-to-change-the-color-of-a-block-within-a-custom-beamer-sty-theme-file
+  \setbeamercolor{block body}{#2}
+  \setbeamercolor{block title}{#3}
+  \begin{block}{#1}\end{block}}
+
+\title[JHUGen and MELA]{Tools for the Higgs boson CP studies: \\ JHUGen and MELA}
+
+\author[Heshy Roskes]{\CMS{I. Anderson}, \Sara{S. Bolognesi}, \theory{F. Caola}, \ATLAS{Y. Gao}, \CMS{A. Gritsan}, \CMS{C. Martin}, \theory{Z. Guo}, \theory{K. Melnikov}, \me{H. Roskes}, \CMS{U. Sarica}, \theory{M. Schulze}, \CMS{N. Tran}, \CMS{A. Whitbeck}, \CMS{M. Xiao}, \CMS{C. You}, \theory{Y. Zhou}
+\texorpdfstring{\\ \leavevmode
+\\
+\ATLAS{ATLAS}, \CMS{CMS}, \theory{theory}, \Sara{where is Sara?}}{}}
+
+%\author{I. Anderson, S. Bolognesi, F. Caola, Y. Gao, A. Gritsan, C. Martin, Z. Guo, K. Melnikov, {H. Roskes}, U. Sarica, M. Schulze, N. Tran, A. Whitbeck, M. Xiao, C. You, Y. Zhou}
+
+
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Framework}
+
+\begin{itemize}
+\item JHUGen
+\begin{itemize}
+\item Event generation
+\end{itemize}
+\item JHUGenMELA
+\begin{itemize}
+\item Discriminants for anomalous coupling fits and background suppression
+\item Reweighting
+\end{itemize}
+\item AnalyticMELA
+\begin{itemize}
+\item Discriminants for anomalous coupling fits and background suppression
+\item Validation
+\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{JHU Generator}
+\begin{itemize}
+\item $gg\rightarrow\spin{0}$
+\item $q\bar{q}\rightarrow\spin{1}$
+\item $gg/q\bar{q}\rightarrow\spin{2}$
+\end{itemize}
+%\leavevmode \\
+\begin{itemize}
+\item
+\begin{itemize}[label={$\rightarrow$}]
+\item $ZZ^*+Z\gamma^*+\gamma^*\gamma^*\rightarrow \text{leptons+jets}$
+\item $W^+W^-\rightarrow \text{leptons+jets}$
+\item $Z\gamma$, $\gamma\gamma$
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{JHU Generator---more Higgs production mechanisms}
+\begin{itemize}
+\item $gg/gq\rightarrow\spin{0}+\text{jet}$
+\item $gg/gq/q\bar{q}\rightarrow\spin{0}+2\text{ jets}$ (QCD)
+\item $q\bar{q}\rightarrow\spin{0}+2\text{ jets}$ (VBF)
+\item $q\bar{q}\rightarrow V^*\rightarrow V+\spin{0}$ (VH)
+\item $gg/q\bar{q}\rightarrow t\bar{t}H$, with $t\rightarrow Wb \rightarrow l\nu b/q\bar{q}^\prime b$
+\end{itemize}
+\end{frame}
+
+
+
+\end{document}
