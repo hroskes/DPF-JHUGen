@@ -10,7 +10,7 @@
 \newcommand{\CMS}[1]{\textcolor{blue}{#1}}
 \newcommand{\ATLAS}[1]{\textcolor{Green}{#1}}
 \newcommand{\theory}[1]{\textcolor{red}{#1}}
-\newcommand{\Sara}[1]{\textcolor{cyan}{#1}}
+\newcommand{\dontknow}[1]{\textcolor{cyan}{#1}}
 \newcommand{\me}[1]{\textbf{\CMS{#1}}}
 
 \newcommand{\spin}[1]{\text{spin }#1}
@@ -24,10 +24,10 @@
 
 \title[JHUGen and MELA]{Tools for the Higgs boson CP studies: \\ JHUGen and MELA}
 
-\author[Heshy Roskes]{\CMS{I. Anderson}, \Sara{S. Bolognesi}, \theory{F. Caola}, \ATLAS{Y. Gao}, \CMS{A. Gritsan}, \theory{Z. Guo}, \CMS{C. Martin}, \theory{K. Melnikov}, \me{H. Roskes}, \CMS{U. Sarica}, \theory{M. Schulze}, \CMS{N. Tran}, \CMS{A. Whitbeck}, \CMS{M. Xiao}, \CMS{C. You}, \theory{Y. Zhou}
+\author[Heshy Roskes]{\CMS{I. Anderson}, \dontknow{S. Bolognesi}, \theory{F. Caola}, \ATLAS{Y. Gao}, \CMS{A. Gritsan}, \dontknow{Z. Guo}, \CMS{C. Martin}, \theory{K. Melnikov}, \me{H. Roskes}, \CMS{U. Sarica}, \theory{M. Schulze}, \CMS{N. Tran}, \CMS{A. Whitbeck}, \CMS{M. Xiao}, \CMS{C. You}, \theory{Y. Zhou}
 \texorpdfstring{\\ \leavevmode
 \\
-\ATLAS{ATLAS}, \CMS{CMS}, \theory{theory}, \Sara{where is Sara?}}{}}
+\ATLAS{ATLAS}, \CMS{CMS}, \theory{theory}, \dontknow{?}}{}}
 
 \date{August 4, 2015}
 
@@ -208,10 +208,10 @@ Probability distribution: & $P\sim\left|\mathcal{M}(d\Pi)\right|^2$ \\
 
 \begin{frame}{Validation of reweighting}{Compare reweighted sample vs. dedicated production}
 \centering
-\includegraphics[width=0.4\textwidth]{reweighting/validation/fa2halffa31} %\hfill
-\includegraphics[width=0.4\textwidth]{reweighting/validation/fa2halffa3half}\\
-\includegraphics[width=0.4\textwidth]{reweighting/validation/fa2Zgamma} %\hfill
-\includegraphics[width=0.4\textwidth]{reweighting/validation/flambda1fa3Zgamma}
+\includegraphics[width=0.4\textwidth]{reweightingvalidation/fa2halffa31} %\hfill
+\includegraphics[width=0.4\textwidth]{reweightingvalidation/fa2halffa3half}\\
+\includegraphics[width=0.4\textwidth]{reweightingvalidation/fa2Zgamma} %\hfill
+\includegraphics[width=0.4\textwidth]{reweightingvalidation/flambda1fa3Zgamma}
 \end{frame}
 
 \begin{frame}{JHUGen in action: Generation, reweighting, discriminants}{
@@ -236,10 +236,10 @@ CMS analysis $H \to ZZ^*/Z\gamma^*/\gamma^*\gamma^* \to 4l$\hfill [CMS-HIG-14-01
 \begin{frame}{JHUGen in action: Applications of reweighting}{CMS analysis $H \to ZZ^*/Z\gamma^*/\gamma^*\gamma^* \to 4l$\hfill [CMS-HIG-14-018] arXiv:1411.3441}
 
 JHUGen generator level:
-\includegraphics[width=0.25\textwidth]{reweighting/HVV/SM}
-\includegraphics[width=0.25\textwidth]{reweighting/HVV/fa2}
-\includegraphics[width=0.25\textwidth]{reweighting/HVV/fa3}
-\includegraphics[width=0.25\textwidth]{reweighting/HVV/flambda1}
+\includegraphics[width=0.25\textwidth]{HVV/SM}
+\includegraphics[width=0.25\textwidth]{HVV/fa2}
+\includegraphics[width=0.25\textwidth]{HVV/fa3}
+\includegraphics[width=0.25\textwidth]{HVV/flambda1}
 \begin{columns}
 \begin{column}{0.6\textwidth}
 \footnotesize
@@ -257,7 +257,7 @@ JHUGen generator level:
 JHUGen detector level (everything reweighted to SM):
 \end{column}
 \begin{column}{0.27\textwidth}
-\includegraphics[width=\textwidth]{reweighting/HVV/reweighted}
+\includegraphics[width=\textwidth]{HVV/reweighted}
 \end{column}
 \end{columns}
 \end{frame}
@@ -265,10 +265,10 @@ JHUGen detector level (everything reweighted to SM):
 \begin{frame}{JHUGen in action}{CMS analysis $H \to ZZ^*/Z\gamma^*/\gamma^*\gamma^* \to 4l$\hfill [CMS-HIG-14-018] arXiv:1411.3441}
 \begin{columns}
 \begin{column}{0.6\textwidth}
-\includegraphics[width=.5\columnwidth]{reweighting/HVV/costheta1}
-\includegraphics[width=.5\columnwidth]{reweighting/HVV/Phi} \\
-\includegraphics[width=.5\columnwidth]{reweighting/HVV/m1}
-\includegraphics[width=.5\columnwidth]{reweighting/HVV/m2}
+\includegraphics[width=.5\columnwidth]{HVV/costheta1}
+\includegraphics[width=.5\columnwidth]{HVV/Phi} \\
+\includegraphics[width=.5\columnwidth]{HVV/m1}
+\includegraphics[width=.5\columnwidth]{HVV/m2}
 \end{column}
 \begin{column}{0.4\textwidth}
 \begin{itemize}
@@ -284,8 +284,8 @@ JHUGen detector level (everything reweighted to SM):
 \begin{column}{0.6\textwidth}
 \includegraphics[width=.5\columnwidth]{HVV/d0minus}
 \includegraphics[width=.5\columnwidth]{HVV/dlambda1} \\
-\includegraphics[width=.5\columnwidth]{reweighting/HVV/Da3gammagamma}
-\includegraphics[width=.5\columnwidth]{reweighting/HVV/Da2Zgamma}
+\includegraphics[width=.5\columnwidth]{HVV/Da3gammagamma}
+\includegraphics[width=.5\columnwidth]{HVV/Da2Zgamma}
 \end{column}
 \begin{column}{0.4\textwidth}
 \begin{itemize}
@@ -302,10 +302,10 @@ JHUGen detector level (everything reweighted to SM):
 %https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/HIGG-2013-17/
 \begin{columns}
 \begin{column}{0.6\textwidth}
-\includegraphics[width=.5\columnwidth]{reweighting/ATLASHVV/TO1}
-\includegraphics[width=.5\columnwidth]{reweighting/ATLASHVV/TO2} \\
-\includegraphics[width=.5\columnwidth]{reweighting/ATLASHVV/TO1plusTO2}
-\includegraphics[width=.5\columnwidth]{reweighting/ATLASHVV/TO1minusTO2}
+\includegraphics[width=.5\columnwidth]{ATLASHVV/TO1}
+\includegraphics[width=.5\columnwidth]{ATLASHVV/TO2} \\
+\includegraphics[width=.5\columnwidth]{ATLASHVV/TO1plusTO2}
+\includegraphics[width=.5\columnwidth]{ATLASHVV/TO1minusTO2}
 \end{column}
 \begin{column}{0.4\textwidth}
 \begin{itemize}
@@ -318,10 +318,10 @@ JHUGen detector level (everything reweighted to SM):
 \begin{frame}{JHUGen in action}{CMS analysis $H \to WW$\hfill [CMS-HIG-14-018] arXiv:1411.3441}
 \begin{columns}
 \begin{column}{0.6\textwidth}
-\includegraphics[width=.5\columnwidth]{reweighting/HVV/WWmll}
-\includegraphics[width=.5\columnwidth]{reweighting/HVV/WWmT} \\
-\includegraphics[width=.5\columnwidth]{reweighting/HVV/WW1jetmll}
-\includegraphics[width=.5\columnwidth]{reweighting/HVV/WW1jetmT}
+\includegraphics[width=.5\columnwidth]{HVV/WWmll}
+\includegraphics[width=.5\columnwidth]{HVV/WWmT} \\
+\includegraphics[width=.5\columnwidth]{HVV/WW1jetmll}
+\includegraphics[width=.5\columnwidth]{HVV/WW1jetmT}
 \end{column}
 \begin{column}{0.4\textwidth}
 \begin{itemize}
@@ -356,10 +356,10 @@ Gluon fusion signal + bkg. + int.
 analysis with $Z\to 4l$ data}\\ \url{http://meetings.aps.org/link/BAPS.2015.APR.X16.8}}
 \begin{columns}
 \begin{column}{0.55\textwidth}
-\includegraphics[width=.5\columnwidth]{reweighting/HVV/Z4lm1}
-\includegraphics[width=.5\columnwidth]{reweighting/HVV/Z4lm2} \\
-\includegraphics[width=.5\columnwidth]{reweighting/HVV/Z4lcostheta1}
-\includegraphics[width=.5\columnwidth]{reweighting/HVV/Z4lDbkgkin}
+\includegraphics[width=.5\columnwidth]{HVV/Z4lm1}
+\includegraphics[width=.5\columnwidth]{HVV/Z4lm2} \\
+\includegraphics[width=.5\columnwidth]{HVV/Z4lcostheta1}
+\includegraphics[width=.5\columnwidth]{HVV/Z4lDbkgkin}
 \end{column}
 \begin{column}{0.45\textwidth}
 \begin{itemize}
