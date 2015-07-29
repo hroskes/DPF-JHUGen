@@ -1,7 +1,7 @@
 *.aux
 *.dvi
 *.nav
-*.pdf
+JHUGen.pdf
 *.synctex.gz
 *.toc
 *.blg
