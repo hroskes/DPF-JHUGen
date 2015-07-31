@@ -8,3 +8,5 @@ JHUGen.pdf
 *.log
 *.out
 *.snm
+temp
+*eps-converted-to.pdf

@@ -5,6 +5,10 @@
 \usepackage{amsmath}
 \usepackage{enumitem}
 \usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{pgffor}
+\usepackage{rotating}
 
 \newcommand{\experiment}[1]{\textcolor{blue}{#1}}
 \newcommand{\CMS}[1]{\experiment{#1}}
@@ -79,6 +83,7 @@
 \end{itemize}
 \item $q\bar{q}\to\spin{1}$
 \item $gg/q\bar{q}\to\spin{2}$ \normalsize
+\item %blank for alignment
 \end{multicols}
 \item
 \item Decay:
@@ -211,6 +216,33 @@ Probability distribution: & $P\sim\left|\mathcal{M}\left(d\Pi\right)\right|^2$ \
 \includegraphics[width=0.4\textwidth]{reweightingvalidation/fa2halffa3half}\\
 \includegraphics[width=0.4\textwidth]{reweightingvalidation/fa2Zgamma} %\hfill
 \includegraphics[width=0.4\textwidth]{reweightingvalidation/flambda1fa3Zgamma}
+\end{frame}
+
+\begin{frame}{Applications for discriminating CP properties}
+\begin{columns}
+\begin{column}{0.3\textwidth}
+
+[Bolognesi, Gao, Gritsan, Melnikov, Schulze, Tran, Whitbeck] arXiv:1208.4018 \\
+
+[Anderson, Bolognesi, Caola, Gao, Gritsan, Martin, Melnikov, Schulze, Tran, Whitbeck, Zhou] arXiv:1309.4819
+
+\end{column}
+\begin{column}{0.2\textwidth}
+\foreach \plot in {HZZ4l,ZZHBB,HZZVBF}{
+\includegraphics[width=\columnwidth]{snowmass/angles-\plot}
+}
+\end{column}
+\begin{column}{0.5\textwidth}
+\centering JHUGen vs. AnalyticMELA \\
+%\tiny \phantom{-} \\ %hack so it doesn't indent
+\foreach \plot in {phi,costhetastar,phistar1,costheta1}{
+\foreach \spn in {spin0_3in1,spin1_2in1,spin2_3in1}{
+\noindent\includegraphics[width=0.3\columnwidth]{onthespinandparity/\plot_125GeV_\spn}
+}
+\\
+}
+\end{column}
+\end{columns}
 \end{frame}
 
 \begin{frame}{JHUGen in action: Generation, reweighting, discriminants}{
