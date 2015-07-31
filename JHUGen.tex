@@ -57,6 +57,7 @@
 \item AnalyticMELA
 \begin{itemize}
 \item Discriminants for anomalous coupling fits and background suppression
+\item Analytic multidimensional fits
 \item Validation
 \end{itemize}
 \end{itemize}
@@ -65,32 +66,29 @@
 
 
 \begin{frame}{JHU Generator}
+\begin{itemize} \small
+\begin{multicols}{2}
+\item $gg\to H$
+\item $gg/gq\to H+\text{jet}$
+\item $gg/gq/q\bar{q}\to H+2\text{ jets}$ (QCD)
+\item $q\bar{q}\to H+2\text{ jets}$ (VBF)
+\item $q\bar{q}\to V^*\to V+H$ (VH)
+\item $gg/q\bar{q}\to t\bar{t}H$
 \begin{itemize}
-\item $gg\to\spin{0}$
-\item $q\bar{q}\to\spin{1}$
-\item $gg/q\bar{q}\to\spin{2}$
+\item $t\to Wb \to l\nu b/q\bar{q}^\prime b$
 \end{itemize}
-%\leavevmode \\
-\begin{itemize}
+\item $q\bar{q}\to\spin{1}$
+\item $gg/q\bar{q}\to\spin{2}$ \normalsize
+\end{multicols}
 \item
-\begin{itemize}[label={$\to$}]
-\item $ZZ^*+Z\gamma^*+\gamma^*\gamma^*\to \text{leptons+jets}$
-\item $W^+W^-\to \text{leptons+jets}$
+\item Decay:
+\begin{itemize}[label={$\to$}] \small
+\item \(ZZ^*+Z\gamma^*+\gamma^*\gamma^*\to \text{any combination of $l^+l^-$, $2\nu$, $q\bar{q}$}\)
+\item \(W^+W^-\to \text{any combination of $l\nu$ and $q\bar{q}^\prime$}\)
 \item $Z\gamma$, $\gamma\gamma$
 \end{itemize}
-\end{itemize}
-\end{frame}
-
-\begin{frame}{JHU Generator---more Higgs production mechanisms}
-\begin{itemize}
-\item $gg/gq\to\spin{0}+\text{jet}$
-\item $gg/gq/q\bar{q}\to\spin{0}+2\text{ jets}$ (QCD)
-\item $q\bar{q}\to\spin{0}+2\text{ jets}$ (VBF)
-\item $q\bar{q}\to V^*\to V+\spin{0}$ (VH)
-\item $gg/q\bar{q}\to t\bar{t}H$, with $t\to Wb \to l\nu b/q\bar{q}^\prime b$
-\item
-\item
-\item Ability to read input LHE files from other generators
+\item Production and decay in one step for spin 1 and spin 2
+\item \texttt{ReadLHE} mode for other processes or to decay events from other generators
 \end{itemize}
 \end{frame}
 
@@ -180,12 +178,13 @@ $
 EvalAmp\_Zprime\_VV} \item \texttt{EvalAmp\_gg\_G\_VV} \item \texttt{EvalAmp\_qqb\_G\_VV} \item \texttt{EvalAmp\_G\_VV \item
 EvalAmp\_WBFH} \item \texttt{EvalAmp\_SBFH} \item \texttt{EvalAmp\_HJ} \item \texttt{EvalXSec\_PP\_TTBH \item
 EvalAmp\_GG\_TTBH} \item \texttt{EvalAmp\_QQB\_TTBH}
+\item %blank for alignment
 \end{itemize}
 \end{multicols}
 \item Complemented and validated by AnalyticMELA
-\item Interface to MCFM for $ZZ/Z\gamma/\gamma\gamma$ SM background (and possibly other processes) \tiny [Campbell, Ellis, Williams] \normalsize
+\item Interface to MCFM for offshell production with anomalous couplings and $ZZ/Z\gamma/\gamma\gamma$ SM background \tiny [Campbell, Ellis, Williams] \normalsize
 \item Can be used for:
-\begin{itemize} \it
+\begin{itemize}
 \item optimal discriminants for anomalous coupling fits
 \item background suppression
 \item reweighting
