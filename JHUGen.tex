@@ -160,9 +160,9 @@ $
 \item \small Similar for spin 1 and spin 2
 \item
 \item Predictions are leading order QCD
-\item Can read input LHE file and add anomalous Higgs decay
-\begin{itemize}
 \item POWHEG (NLO QCD) $gg\to H$ $\longrightarrow$ JHUGen anomalous decay
+\begin{itemize}
+\item Anomalous couplings do not affect 1 jet correlations
 \end{itemize}
 \end{itemize}
 \end{frame}
@@ -199,8 +199,8 @@ Basic idea: & $\text{weight}\left(d\Pi\right)=\frac{P(J^P_\text{target},d\Pi)}{P
 For reweighting, & $d\Pi = d\Pi_\text{generator}$ \\
 (For fitting, & $d\Pi = d\Pi_\text{observed}$) \\
 & \\
-Probability distribution: & $P\sim\left|\mathcal{M}(d\Pi)\right|^2$ \\
- & or $\sim f^p_i(x_1)f^p_j(x_2)\left|\mathcal{M}(d\Pi)\right|^2$
+Probability distribution: & $P\sim\left|\mathcal{M}\left(d\Pi\right)\right|^2$ \\
+ & or $\sim f^p_i\left(x_1\right)f^p_j(x_2)\left|\mathcal{M}\left(d\Pi\right)\right|^2$
 
 \end{tabular}
 \end{frame}
@@ -371,7 +371,19 @@ analysis with $Z\to 4l$ data}\\ \url{http://meetings.aps.org/link/BAPS.2015.APR.
 \end{frame}
 
 \begin{frame}{$ttH$}
-Need plots from Meng, maybe a few slides
+Study top quarks produced in association with Higgs
+\includegraphics[width=.5\textwidth]{ttH/etatop}
+\includegraphics[width=.5\textwidth]{ttH/pTH}
+\begin{itemize}
+\item Associated top production is very sensitive to the incoming partons
+\begin{itemize}[label=$\Rightarrow$]
+\item Include PDF in MELA weight
+\[
+\sim f^p_i\left(x_1\right)f^p_j\left(x_2\right)\times\left|\mathcal{M}\left(d\Pi\right)\right|^2
+\]
+\end{itemize}
+\item Similar for VBF, VH, $H+j\left(j\right)$
+\end{itemize}
 \end{frame}
 
 \begin{frame}{Summary}
