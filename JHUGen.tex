@@ -28,14 +28,14 @@
 
 \title[JHUGen and MELA]{Tools for the Higgs boson CP studies: \\ JHUGen and MELA}
 
-\author[Heshy Roskes]{\CMS{I. Anderson}, \CMS{S. Bolognesi}, \theory{F. Caola}, \ATLAS{Y. Gao}, \CMS{A. Gritsan}, \CMS{Z. Guo}, \CMS{C. Martin}, \theory{K. Melnikov}, \me{H. Roskes}, \CMS{U. Sarica}, \theory{M. Schulze}, \CMS{N. Tran}, \CMS{A. Whitbeck}, \CMS{M. Xiao}, \CMS{C. You}, \theory{Y. Zhou}
+\author[Heshy Roskes]{\CMS{I.~Anderson}, \CMS{S.~Bolognesi}, \theory{F.~Caola}, \ATLAS{Y.~Gao}, \CMS{A.~Gritsan}, \CMS{Z.~Guo}, \CMS{C.~Martin}, \theory{K.~Melnikov}, \me{H.~Roskes}, \CMS{U.~Sarica}, \theory{M.~Schulze}, \CMS{N.~Tran}, \CMS{A.~Whitbeck}, \CMS{M.~Xiao}, \CMS{C.~You}, \theory{Y.~Zhou}
 \texorpdfstring{\\ \leavevmode
 \\
 \theory{Theory}, \experiment{experiment}}{}}
 
 \date{August 4, 2015}
 
-%\author{I. Anderson, S. Bolognesi, F. Caola, Y. Gao, A. Gritsan, C. Martin, Z. Guo, K. Melnikov, {H. Roskes}, U. Sarica, M. Schulze, N. Tran, A. Whitbeck, M. Xiao, C. You, Y. Zhou}
+%\author{I.~Anderson, S.~Bolognesi, F.~Caola, Y.~Gao, A.~Gritsan, C.~Martin, Z.~Guo, K.~Melnikov, {H.~Roskes}, U.~Sarica, M.~Schulze, N.~Tran, A.~Whitbeck, M.~Xiao, C.~You, Y.~Zhou}
 
 
 
@@ -220,27 +220,32 @@ Probability distribution: & $P\sim\left|\mathcal{M}\left(d\Pi\right)\right|^2$ \
 
 \begin{frame}{Applications for discriminating CP properties}
 \begin{columns}
-\begin{column}{0.3\textwidth}
+\begin{column}{0.5\textwidth}
 
-[Bolognesi, Gao, Gritsan, Melnikov, Schulze, Tran, Whitbeck] arXiv:1208.4018 \\
+\begin{center}
+\foreach \plot in {ZZHBB,HZZVBF,HZZ4l}{
+\includegraphics[width=0.48\columnwidth]{snowmass/angles-\plot}
+}
+\end{center}
+
+\scriptsize
+[Bolognesi, Gao, Gritsan, Melnikov, Schulze, Tran, Whitbeck] arXiv:1208.4018
 
 [Anderson, Bolognesi, Caola, Gao, Gritsan, Martin, Melnikov, Schulze, Tran, Whitbeck, Zhou] arXiv:1309.4819
 
 \end{column}
-\begin{column}{0.2\textwidth}
-\foreach \plot in {HZZ4l,ZZHBB,HZZVBF}{
-\includegraphics[width=\columnwidth]{snowmass/angles-\plot}
+\begin{column}{0.5\textwidth}
+\begin{columns}
+%\tiny \phantom{-} \\ %hack so it doesn't indent
+\foreach \spn in {0,1,2}{
+\begin{column}{0.3\columnwidth}
+\small \centering Spin \spn \\
+\foreach \plot in {phi,costhetastar,phistar1,costheta1}{
+\noindent\includegraphics[width=\columnwidth]{onthespinandparity/\plot_125GeV_spin\spn}
 }
 \end{column}
-\begin{column}{0.5\textwidth}
-\centering JHUGen vs. AnalyticMELA \\
-%\tiny \phantom{-} \\ %hack so it doesn't indent
-\foreach \plot in {phi,costhetastar,phistar1,costheta1}{
-\foreach \spn in {spin0_3in1,spin1_2in1,spin2_3in1}{
-\noindent\includegraphics[width=0.3\columnwidth]{onthespinandparity/\plot_125GeV_\spn}
 }
-\\
-}
+\end{columns}
 \end{column}
 \end{columns}
 \end{frame}
