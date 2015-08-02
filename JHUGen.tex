@@ -1,6 +1,6 @@
 \documentclass[usenames,dvipsnames,svgnames,table]{beamer}
 
-\usetheme{AnnArbor}
+\usetheme{AnnArbor} %was there really a choice?
 \usepackage{lmodern}
 \usepackage{amsmath}
 \usepackage{enumitem}
@@ -29,12 +29,14 @@
 
 \title[JHUGen and MELA]{Tools for the Higgs boson CP studies: \\ JHUGen and MELA}
 
-\author[Heshy Roskes]{\CMS{I.~Anderson}, \CMS{S.~Bolognesi}, \theory{F.~Caola}, \ATLAS{Y.~Gao}, \CMS{A.~Gritsan}, \CMS{Z.~Guo}, \CMS{C.~Martin}, \theory{K.~Melnikov}, \me{H.~Roskes}, \CMS{U.~Sarica}, \theory{M.~Schulze}, \CMS{N.~Tran}, \CMS{A.~Whitbeck}, \CMS{M.~Xiao}, \CMS{C.~You}, \theory{Y.~Zhou}
+\author[Heshy Roskes]{\CMS{I.~Anderson}, \CMS{S.~Bolognesi}, \theory{F.~Caola}, \ATLAS{Y.~Gao}, \CMS{A.~Gritsan}, \CMS{Z.~Guo}, \CMS{C.~Martin}, \theory{K.~Melnikov}, \me{Heshy~Roskes}, \CMS{U.~Sarica}, \theory{M.~Schulze}, \CMS{N.~Tran}, \CMS{A.~Whitbeck}, \CMS{M.~Xiao}, \CMS{C.~You}, \theory{Y.~Zhou}
 \texorpdfstring{\\ \leavevmode
 \\
 \theory{Theory}, \experiment{experiment}}{}}
 
-\date{August 4, 2015}
+\date[August 4, 2015]{2015 meeting, APS Division of Particles and Fields\\
+Ann Arbor, MI \\ \leavevmode \\
+August 4, 2015}
 
 %\author{I.~Anderson, S.~Bolognesi, F.~Caola, Y.~Gao, A.~Gritsan, C.~Martin, Z.~Guo, K.~Melnikov, {H.~Roskes}, U.~Sarica, M.~Schulze, N.~Tran, A.~Whitbeck, M.~Xiao, C.~You, Y.~Zhou}
 
@@ -399,16 +401,37 @@ Gluon fusion signal + bkg. + int.
 analysis with $Z\to 4l$ data}\\ \url{http://meetings.aps.org/link/BAPS.2015.APR.X16.8}}
 \begin{columns}
 \begin{column}{0.55\textwidth}
+\includegraphics[width=.5\columnwidth]{HVV/Z4lmH}
+\includegraphics[width=.5\columnwidth]{HVV/Z4lcostheta1} \\
 \includegraphics[width=.5\columnwidth]{HVV/Z4lm1}
-\includegraphics[width=.5\columnwidth]{HVV/Z4lm2} \\
-\includegraphics[width=.5\columnwidth]{HVV/Z4lcostheta1}
-\includegraphics[width=.5\columnwidth]{HVV/Z4lDbkgkin}
+\includegraphics[width=.5\columnwidth]{HVV/Z4lm2}
 \end{column}
 \begin{column}{0.45\textwidth}
 \begin{itemize}
 \item Mixture of $s$, $t$, and $u$ channels generated with POWHEG
 \item MELA reweighting used $s$ and $t+u$ channels separately, along with interference
 \item $gg$ background is obtained by reweighting $q\bar{q}$
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{JHUGen in action: Background reweighting}{H. Roskes, \emph{Validation of the Higgs boson spin-parity
+analysis with $Z\to 4l$ data}\\ \url{http://meetings.aps.org/link/BAPS.2015.APR.X16.8}}
+\begin{columns}
+\begin{column}{0.55\textwidth}
+\includegraphics[width=.5\columnwidth]{HVV/Z4lDbkgkin}
+\includegraphics[width=.5\columnwidth]{HVV/Z4lfHscan} \\
+\newlength{\imageheight}
+\settoheight\imageheight{\includegraphics[width=.5\columnwidth]{HVV/Z4lftuscan}}
+\hfuzz=24pt
+\includegraphics[width=.5\columnwidth]{HVV/Z4lftuscan}
+\includegraphics[height=\the\imageheight]{HVV/Z4l2dscan}
+\end{column}
+\begin{column}{0.45\textwidth}
+\begin{itemize}
+\item MELA discriminant $D^\text{bkg}_\text{kin}$ to separate $Z$ boson from alternative Higgs hypothesis.
+\item Higgs hypothesis excluded at $>99\%$ CL
 \end{itemize}
 \end{column}
 \end{columns}
